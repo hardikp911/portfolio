@@ -1,0 +1,7 @@
+FTP USERNAME if0_35289331
+FTP PASSWORD 1FPKTIU4tKsJ 
+FTP HOSTNAME ftpupload.net
+FTP PORT (OPTIONAL) 21
+
+
+http://hardikp.tech/?i=1
