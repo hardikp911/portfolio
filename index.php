@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Hardik Parmar</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +21,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Hardik Parmar</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -38,16 +38,16 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/images/hardik.png" alt="Hardik Parmar profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Hardik Parmar</h1>
+        <p class="section__text__p2">Backend Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/images/Parmar_Hardik_Resume.pdf')"
           >
             Download CV
           </button>
@@ -56,18 +56,24 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
+          <a href="https://www.linkedin.com/in/hardik3259/" target="_blank">
+            <img src="./assets/images/linkedin.png" alt="My LinkedIn profile" class="icon">
+          </a>
+          <a href="https://github.com/hardikp911/" target="_blank">
+            <img src="./assets/images/github.png" alt="My Github profilee" class="icon">
+          </a>
+          <!-- <img
+            src="./assets/images/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/hardik3259/'"
           />
           <img
-            src="./assets/github.png"
+            src="./assets/images/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+            onclick="location.href='https://github.com/hardikp911'"
+          /> -->
         </div>
       </div>
     </section>
@@ -77,7 +83,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/images/about-pic.jpg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -86,7 +92,7 @@
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/experience.png"
+                src="./assets/images/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
@@ -95,7 +101,7 @@
             </div>
             <div class="details-container">
               <img
-                src="./assets/education.png"
+                src="./assets/images/education.png"
                 alt="Education icon"
                 class="icon"
               />
@@ -116,7 +122,7 @@
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="./assets/images/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
@@ -132,7 +138,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -143,7 +149,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -154,7 +160,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -165,7 +171,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -176,7 +182,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -187,7 +193,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -203,7 +209,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -214,7 +220,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -225,7 +231,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -236,7 +242,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -250,7 +256,7 @@
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="./assets/images/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
@@ -264,7 +270,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/images/project-1.png"
                 alt="Project 1"
                 class="project-img"
               />
@@ -288,7 +294,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/images/project-2.png"
                 alt="Project 2"
                 class="project-img"
               />
@@ -312,7 +318,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/images/project-3.png"
                 alt="Project 3"
                 class="project-img"
               />
@@ -336,7 +342,7 @@
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
+        src="./assets/images/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
@@ -348,19 +354,19 @@
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="./assets/email.png"
+            src="./assets/images/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:hardik3259@gmail.com">Example@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/linkedin.png"
+            src="./assets/images/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/hardik3259/" target="_blank" >LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -375,8 +381,8 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Hardik. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
