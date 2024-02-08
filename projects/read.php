@@ -10,6 +10,10 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Headers: Content-Type, Authorization, Access-Control-Allow-Headers, X-Request-With"); // Add the necessary headers
 
 
+echo "jaaha";
+print_r($_SERVER['REQUEST']);
+die;
+
 $requestMethod = $_SERVER['REQUEST'];
 
 if($requestMethod == "GET"){
@@ -23,9 +27,7 @@ if($requestMethod == "GET"){
         'message' => $requestMethod. "Method Not Allowed",
     );
     header("HTTP/1.0 405 Method Not Allowed");
-    echo json_encode($data);
-
-    
+    echo json_encode($data);    
 }
 
 ?>
