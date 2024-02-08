@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -38,7 +38,7 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/images/hardik.png" alt="Hardik Parmar profile picture" />
+        <img src="../assets/images/hardik.png" alt="Hardik Parmar profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -47,7 +47,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/images/Parmar_Hardik_Resume.pdf')"
+            onclick="window.open('../assets/images/Parmar_Hardik_Resume.pdf')"
           >
             Download CV
           </button>
@@ -57,19 +57,19 @@
         </div>
         <div id="socials-container">
           <a href="https://www.linkedin.com/in/hardik3259/" target="_blank">
-            <img src="./assets/images/linkedin.png" alt="My LinkedIn profile" class="icon">
+            <img src="../assets/images/linkedin.png" alt="My LinkedIn profile" class="icon">
           </a>
           <a href="https://github.com/hardikp911/" target="_blank">
-            <img src="./assets/images/github.png" alt="My Github profilee" class="icon">
+            <img src="../assets/images/github.png" alt="My Github profilee" class="icon">
           </a>
           <!-- <img
-            src="./assets/images/linkedin.png"
+            src="../assets/images/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/hardik3259/'"
           />
           <img
-            src="./assets/images/github.png"
+            src="../assets/images/github.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/hardikp911'"
@@ -83,7 +83,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/images/about-pic.jpg"
+            src="../assets/images/about-pic.jpg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -92,7 +92,7 @@
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/images/experience.png"
+                src="../assets/images/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
@@ -101,7 +101,7 @@
             </div>
             <div class="details-container">
               <img
-                src="./assets/images/education.png"
+                src="../assets/images/education.png"
                 alt="Education icon"
                 class="icon"
               />
@@ -122,7 +122,7 @@
         </div>
       </div>
       <img
-        src="./assets/images/arrow.png"
+        src="../assets/images/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
@@ -138,7 +138,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src="../assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -149,7 +149,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src="../assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -160,7 +160,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src="../assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -171,7 +171,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src="../assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -182,7 +182,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src="../assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -193,7 +193,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src="../assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -209,7 +209,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src="../assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -220,7 +220,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src="../assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -231,7 +231,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src="../assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -242,7 +242,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/images/checkmark.png"
+                  src="../assets/images/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -256,7 +256,7 @@
         </div>
       </div>
       <img
-        src="./assets/images/arrow.png"
+        src="../assets/images/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
@@ -270,7 +270,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/images/project-1.png"
+                src="../assets/images/project-1.png"
                 alt="Project 1"
                 class="project-img"
               />
@@ -294,7 +294,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/images/project-2.png"
+                src="../assets/images/project-2.png"
                 alt="Project 2"
                 class="project-img"
               />
@@ -318,7 +318,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/images/project-3.png"
+                src="../assets/images/project-3.png"
                 alt="Project 3"
                 class="project-img"
               />
@@ -342,7 +342,7 @@
         </div>
       </div>
       <img
-        src="./assets/images/arrow.png"
+        src="../assets/images/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
@@ -362,7 +362,7 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="./assets/images/linkedin.png"
+            src="../assets/images/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
@@ -383,6 +383,6 @@
       </nav>
       <p>Copyright &#169; 2024 Hardik. All Rights Reserved.</p>
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>
