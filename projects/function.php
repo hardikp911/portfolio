@@ -7,7 +7,8 @@ function projectList(){
     if($queryRun){
         if(mysqli_num_rows($queryRun)>0){
             
-            $res = mysqli_fetch_all($queryRun,MYSQL_ASSOC);
+            $res = mysqli_fetch_all($queryRun, MYSQLI_ASSOC);
+
             $data = array(
                 'status' => 200,
                 'message' => 'Success',
