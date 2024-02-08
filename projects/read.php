@@ -11,7 +11,16 @@ header("Access-Control-Allow-Headers: Content-Type, Authorization, Access-Contro
 
 
 echo "jaaha";
-print_r($_SERVER['REQUEST']);
+
+// Check if the 'REQUEST_METHOD' key exists in the $_SERVER superglobal array
+if(isset($_SERVER['REQUEST_METHOD'])) {
+    // Print the value of the 'REQUEST_METHOD' key
+    echo $_SERVER['REQUEST_METHOD'];
+} else {
+    // Handle the case where the 'REQUEST_METHOD' key does not exist
+    echo "REQUEST_METHOD is not defined";
+}
+
 die;
 
 $requestMethod = $_SERVER['REQUEST'];
