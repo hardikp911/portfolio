@@ -1,15 +1,15 @@
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+
 
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: "Poppins", sans-serif;
 }
+
+
 
 html {
   scroll-behavior: smooth;
@@ -174,6 +174,15 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+.section__pic-container .hardikProfile {
+  width: 400px;
+  transition: all 2000ms ease;
+  cursor: pointer;
+}
+
+.section__pic-container .hardikProfile:hover{
+  transform: scale(1.1);
 }
 
 .section__text {
