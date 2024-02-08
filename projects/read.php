@@ -2,7 +2,7 @@
 // Turn on error reporting
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-require_once("./projects/function.php");
+require "./function.php";
 // Set access control headers
 header("Access-Control-Allow-Origin: *"); // Change * to your specific domain if needed
 header("Access-Control-Allow-Methods: GET"); // Change GET to the methods you want to allow
