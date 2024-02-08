@@ -1,5 +1,5 @@
 <?php
-require_once("./connection/connection.php");
+require_once "../connection/connection.php";
 function projectList(){
     global $conn;
     $sqlQuery = "select * from projects";
