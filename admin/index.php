@@ -53,7 +53,7 @@
 					}
 				}
 				?>
-				?>
+				
 				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 					<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg">
 					<h2 class="title">Welcome</h2>
