@@ -176,7 +176,6 @@ section {
   margin: auto 0;
 }
 .section__pic-container .hardikProfile {
-  width: 400px;
   transition: all 2000ms ease;
   cursor: pointer;
 }
