@@ -1,95 +1,87 @@
-html, body {
-	width:100%;
-	height:100%;
-}
-body {
-    margin: 0;
+*,
+*:before,
+*:after{
     padding: 0;
-    font-family: sans-serif;
-    /* 	background: url(bg.jpg); */
-    background-image: linear-gradient(to right top, #1db9ff, #a2a0ff, #fb7ad4, #ff677a, #f48603);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
 }
-.box {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 400px;
-	padding: 40px;
-	background: rgba(0,0,0,.8);
-	box-sizing: border-box;
-	box-shadow: 0 15px 25px rgba(0,0,0,.5);
-	border-radius: 10px;
+body{
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #6f6df4,
+        #4c46f5
+    );
 }
-.box h2 {
-	margin: 0 0 30px;
-	padding: 0;
-	color: #FFF;
-	text-align: center;
+.container{
+    background-color: #ffffff;
+    width: 70%;
+    min-width: 420px;
+    padding: 35px 50px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0,0,0,0.15);
 }
-
-.box .inputBox {
-	position: relative;
+h1{
+    font-size: 30px;
+    text-align: center;
+    color: #1c093c;
 }
-.box .inputBox input {
-	width: 100%;
-	padding: 10px 0;
-	font-size: 16px;
-	color: #FFF;
-	letter-spacing: 1px;
-	margin-bottom: 30px;
-	border: none;
-	border-bottom: 1px solid #FFF;
-	outline: none;
-	background: transparent;
+p{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: #606060;
+    font-size: 14px;
+    font-weight: 400;
 }
-.box .inputBox label {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 10px 0;
-	font-size: 16px;
-	color: #FFF;
-	pointer-events: none;
-	transition: .5s;
-	animation: LabelOnLoad 1s forwards 0s ease;
+form{
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
 }
-@keyframes LabelOnLoad{
-    0%{
-        transform: rotate(0) translateY(-19px);
-        opacity: 0;
-        }
-    100%{
-        transform: rotate(0) translateY(0);
-        opacity: 1;
-        }
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
 }
-.box .inputBox input:focus ~ label, 
-.box .inputBox input:valid ~ label {
-	top: -19px;
-	left:0;
-	color: #03A9F4;
-	font-size: 12px;
+label{
+    color: #1c093c;
+    font-size: 14px;
 }
-.box input[type='submit'] {
-	background: transparent;
-	border: none;
-	outline: none;
-	color: #FFF;
-	background: #03A9F4;
-	padding: 10px 20px;
-	cursor: pointer;
-	border-radius: 5px;
-	font-size: 14px;
+textarea,
+input{
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    margin-top: 5px;
 }
-.box input[type='submit']:hover {
-	background-color: rgba(3, 169, 244, 0.7);
+textarea{
+    resize: none;
 }
-@media(max-width: 720px){
-	.box {
-		width: 80%;
-	}
+textarea:focus,
+input:focus{
+    outline: none;
+    border-color: #6f6df4;
+}
+button{
+    border: none;
+    padding: 10px 20px;
+    background: linear-gradient(
+        130deg,
+        #6f6df4,
+        #4c46f5
+    );
+    color: #ffffff;
+    border-radius: 3px;
 }
