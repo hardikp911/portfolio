@@ -35,17 +35,15 @@
 					$username = $_POST["username"];
 					$password = $_POST["password"];
 
-					$query = "SELECT role FROM users WHERE username = '$username' AND password = '$password'";
+					$query = "SELECT role FROM hardikLogin WHERE username = '$username' AND password = '$password'";
 					$result = mysqli_query($conn, $query);
 					$user = mysqli_fetch_assoc($result);
 
 					if ($user) {
 						if ($user["role"] == "admin") {
-
 							header("Location: admin.php");
 							exit;
 						} else {
-							// Perform actions for a non-admin user
 							$error = true;
 						}
 					} else {
@@ -54,7 +52,7 @@
 				}
 				?>
 				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-					<img src="//avatar.svg">
+					<img src="./avatar.svg">
 					<h2 class="title">Welcome</h2>
 					<div class="input-div one">
 						<div class="i">
