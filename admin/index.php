@@ -28,27 +28,41 @@
 			</div>
 			<div class="login-content">
 				<?php
-				include('../connection/connection.php');
 				session_start();
-				$_SESSION['username'] = $_POST["username"];
+
+				// Check if the form is submitted
 				if ($_SERVER["REQUEST_METHOD"] == "POST") {
-					$username = $_POST["username"];
-					$password = $_POST["password"];
+					require '../connection/connection.php';
 
-					$query = "SELECT role FROM hardikLogin WHERE username = '$username' AND password = '$password'";
-					$result = mysqli_query($conn, $query);
-					$user = mysqli_fetch_assoc($result);
+					// Get username and password from form
+					$username = $_POST['username'];
+					$password = $_POST['password'];
 
-					if ($user) {
-						if ($user["role"] == "admin") {
+					// SQL query to check if user exists and get role
+					$sql = "SELECT * FROM hardikLogin WHERE username = '$username' AND password = '$password'";
+					$result = $conn->query($sql);
+
+					if ($result->num_rows == 1) {
+						// User exists, fetch the role
+						$row = $result->fetch_assoc();
+						$role = $row['role'];
+
+						if ($role == 'admin') {
+							// Set session variables
+							$_SESSION['username'] = $username;
+							$_SESSION['role'] = $role;
+
+							// Redirect to admin.php
 							header("Location: admin.php");
-							exit;
+							exit();
 						} else {
-							$error = true;
+							echo "You do not have permission to access this page.";
 						}
 					} else {
-						$error = true;
+						echo "Invalid username or password.";
 					}
+
+					$conn->close();
 				}
 				?>
 				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
@@ -75,10 +89,6 @@
 					<a href="#">Forgot Password?</a>
 					<input type="submit" class="btn" value="Login">
 				</form>
-				<?php if (isset($error) && $error) { ?>
-
-<div class="error-message">Invalid username or password</div>
-<?php } ?>
 			</div>
 		</div>
 
