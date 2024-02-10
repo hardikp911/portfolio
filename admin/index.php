@@ -44,7 +44,7 @@ ini_set('display_errors', 1);
 					$password = $_POST['password'];
 
 					// SQL query to check if user exists and get role
-					$sql = "SELECT * FROM hardikLogin WHERE username = '$username' AND password = '$password'";
+					$sql = "SELECT * FROM hardikLogin WHERE name = '$username' AND password = '$password'";
 					$result = $conn->query($sql);
 
 					if ($result->num_rows == 1) {
