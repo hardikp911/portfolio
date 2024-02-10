@@ -19,7 +19,12 @@
 		<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
+
+?>
 	<body>
 		<img class="wave" src="./wave.png">
 		<div class="container">
