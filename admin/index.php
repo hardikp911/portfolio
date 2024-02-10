@@ -21,10 +21,10 @@
 	</head>
 
 	<body>
-		<img class="wave" src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/wave.png">
+		<img class="wave" src="./wave.png">
 		<div class="container">
 			<div class="img">
-				<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/bg.svg">
+				<img src="./bg.svg">
 			</div>
 			<div class="login-content">
 				<?php
@@ -54,7 +54,7 @@
 				}
 				?>
 				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-					<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg">
+					<img src="//avatar.svg">
 					<h2 class="title">Welcome</h2>
 					<div class="input-div one">
 						<div class="i">
